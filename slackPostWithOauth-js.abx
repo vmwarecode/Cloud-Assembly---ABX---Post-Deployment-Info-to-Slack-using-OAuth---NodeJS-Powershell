@@ -1,0 +1,16 @@
+---
+exportVersion: "1"
+# originalexportId: "8a5eb3417126ded00171630f2b542a66"
+exportId: "8a5eb3417126ded00171630f2b542a66"
+name: "slackPostWithOauth-js (www.kaloferov.com)"
+runtime: "nodejs"
+entrypoint: "handler"
+description: "Slack - Post to Slack using OAuth"
+inputs:
+  slackTokenIn: "<Required>"
+  slackChannelIn: "<Required>"
+timeoutSeconds: 60
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+provider: "aws"
+memoryInMB: 128

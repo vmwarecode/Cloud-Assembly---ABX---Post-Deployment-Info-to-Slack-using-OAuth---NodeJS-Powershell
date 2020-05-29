@@ -1,0 +1,18 @@
+---
+exportVersion: "1"
+# original exportId: "8a5ea9ae71c2b1880171eed8887c5f03"
+exportId: "8a5ea9ae71c2b1880171eed8887c5f11"
+name: "slackPostWithOauth-ps (www.kaloferov.com)"
+runtime: "powershell"
+entrypoint: "handler"
+description: "Slack - Post to Slack using OAuth"
+inputs:
+  slackTokenIn: "<Required>"
+  slackChannelIn: "<Required>"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
